@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <script>
+        // function fångaElement() {
+        //     document.getElementById("testparagraf").style.backgroundColor = 'green'
+        //     console.log(document.getElementById("testparagraf"))
+        // }
+
+        // function döljelement()  {
+        //     // console.log(document.getElementById("paragraf-test-2").style.backgroundColor)
+        //     document.getElementById("paragraf-test-2").style.backgroundColor = 'green';
+        //     document.getElementById("paragraf-test-2").style.display = "none";
+
+        // }
+        function ändratillgul() {
+            console.log('test ändratillgul')
+            console.log(document.getElementById("testparagraf-3-id").style.backgroundColor)
+            document.getElementById("testparagraf-3-id").style.backgroundColor = 'yellow'
+            console.log(document.getElementById("testparagraf-3-id").style.backgroundColor)
+        }
+
+        function ändratillblå() {
+            console.log('test ändratillgul')
+            console.log(document.getElementById("testparagraf-3-id").style.backgroundColor)
+            document.getElementById("testparagraf-3-id").style.backgroundColor = 'blue'
+            console.log(document.getElementById("testparagraf-3-id").style.backgroundColor)
+        }
+    </script>
+    <!-- <p id="testparagraf">Testparagraf</p> -->
+    <!-- <p style="background-color: aqua;" id="paragraf-test-2">test2</p> -->
+    <!-- <button onclick="fångaElement()">kör funktionen fånga element</button> -->
+    <!-- <button onclick="döljelement()">kör funktionen dölj element</button> -->
+        <p id="testparagraf-3-id">testparagraf 3</p>
+        <button onclick="ändratillgul()"> Ändra till gul bakgrundsfärg på testparagraf 3</button>
+        <button onclick="ändratillblå()"> Ändra till blå bakgrundsfärg på testparagraf 3</button>
+
+        <!-- https://www.w3schools.com/jsref/dom_obj_style.asp -->
+</body>
+</html>
