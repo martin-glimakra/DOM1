@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title>Klasser</title>
+</head>
+<body>
+    <script>
+        let poang = 0
+        function visa() {
+            console.log(document.getElementById('poang-div'))
+            document.getElementById('poang-div').innerHTML = poang
+        }
+
+        function andrapoang() {
+            poang = poang +1
+        }
+
+        function fel () {
+            //ändra färg till röd
+        }
+
+        function rätt () {
+            //ändra färg till grön
+            
+            // poang = poang + 1
+            andrapoang()
+        }
+    </script>
+
+<button onclick="andrapoang()">ändra poäng</button>
+<p>Poäng:</p>
+<div id="poang-div"></div>
+<button onclick="visa()">visa</button>
+<button onclick="rätt()">Rätt svar</button>
+<button onclick="fel()">Fel svar</button>
+</body>
+</html>
