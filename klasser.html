@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Klasser</title>
+</head>
+<body>
+    <script>
+        function logelement() {
+            console.log(document.getElementsByClassName('martins-fem-element').length)
+            console.log(document.getElementsByClassName('martins-fem-element')[0])
+            document.getElementsByClassName('martins-fem-element')[4].style.backgroundColor = 'green'
+
+            //Följande kod gör samma sak
+        // document.getElementsByClassName('martins-fem-element')[0].style.backgroundColor = 'blue'
+            let nummerett = document.getElementsByClassName('martins-fem-element')[0]
+            nummerett.style.backgroundColor = 'blue'
+
+        }
+    </script>
+    <div class="martins-fem-element">1</div>
+    <div class="martins-fem-element">2</div>
+    <div class="martins-fem-element">3</div>
+    <div class="martins-fem-element">4</div>
+    <div class="martins-fem-element">5</div>
+    <button onclick="logelement()">log element</button>
+</body>
+</html>
